@@ -1,0 +1,15 @@
+node_modules/
+uploads/
+.env
+.env.*
+.DS_Store
+
+# Docker
+*.log
+
+# Tailscale / local state
+tailscale-state/
+
+# macOS
+.AppleDouble
+.LSOverride
