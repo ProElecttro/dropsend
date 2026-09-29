@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Photo Transfer</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="card">
+
+            <h1>Photo Transfer</h1>
+
+            <p class="subtitle">
+                Send photos directly to your Mac
+            </p>
+
+            <label
+                for="photoInput"
+                class="select-button"
+            >
+                Select Photos
+            </label>
+
+            <input
+                id="photoInput"
+                type="file"
+                accept="image/*"
+                multiple
+                hidden
+            >
+
+            <div id="preview"></div>
+
+            <button
+                id="uploadButton"
+                disabled
+            >
+                Upload
+            </button>
+
+            <div
+                id="progressContainer"
+                class="hidden"
+            >
+                <div class="progress">
+                    <div id="progressBar"></div>
+                </div>
+
+                <p id="progressText">
+                    Uploading...
+                </p>
+            </div>
+
+            <p
+                id="status"
+                class="status"
+            ></p>
+
+        </div>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
