@@ -69,3 +69,22 @@ Node.js, Express, Docker, Docker Compose, Nginx and Tailscale.
 
 The main idea is to run everything locally and use Tailscale to access it from my phone. No cloud deployment or external storage is required.
 
+
+## What if you don't want to run it on your laptop?
+
+Take it one step further.
+
+Instead of running DropSend on your laptop, keep a Raspberry Pi at home and use it as your personal photo storage box.
+
+You're on a trip, your phone storage is full, and you don't want to delete anything. Just connect to your home network through Tailscale and send the photos directly to the Raspberry Pi.
+
+And if you want to get more interesting with it, you could use a BeagleBone Black as a small controller to remotely power or trigger the Raspberry Pi, start the DropSend container, and get everything running without even touching the Pi.
+
+So the setup becomes:
+
+Phone → Tailscale → Raspberry Pi → Storage
+
+with the BeagleBone acting as the remote control layer.
+
+At that point, DropSend isn't really just a photo-transfer app anymore. It's a small self-hosted photo storage system you can access from anywhere.
+
