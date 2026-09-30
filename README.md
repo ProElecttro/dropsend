@@ -63,6 +63,12 @@ To start it again:
 docker compose up -d
 ```
 
+## Using Docker
+just run : 
+```bash
+docker run -d --name dropsend -p 80:5050 -v "$(pwd)/uploads:/app/uploads" proelectro/dropsend:latest
+```
+
 ## Tech
 
 Node.js, Express, Docker, Docker Compose, Nginx and Tailscale.
