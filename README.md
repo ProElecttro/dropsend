@@ -1,8 +1,8 @@
 # DropSend
 
-DropSend is a simple way to send photos from my phone directly to my PC.
+DropSend is a simple way to send photos from my phone directly to my PC without needing to connect to same network and without deploying the app anywhere.
 
-It runs locally on my PC, so there is no need to deploy it anywhere. I use Tailscale to connect my phone and PC, and the photos are saved directly to a predefined folder on the PC.
+It runs locally on my PC, I use Tailscale to connect my phone and PC, and the photos are saved directly to a predefined folder on the PC.
 
 ## Setup Using Docker
 just run : 
