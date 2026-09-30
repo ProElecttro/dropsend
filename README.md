@@ -4,7 +4,13 @@ DropSend is a simple way to send photos from my phone directly to my PC.
 
 It runs locally on my PC, so there is no need to deploy it anywhere. I use Tailscale to connect my phone and PC, and the photos are saved directly to a predefined folder on the PC.
 
-## Setup
+## Setup Using Docker
+just run : 
+```bash
+docker run -d --name dropsend -p 80:5050 -v "$(pwd)/uploads:/app/uploads" proelectro/dropsend:latest
+```
+
+## Setup 
 
 Clone the repo:
 
@@ -61,12 +67,6 @@ To start it again:
 
 ```bash
 docker compose up -d
-```
-
-## Using Docker
-just run : 
-```bash
-docker run -d --name dropsend -p 80:5050 -v "$(pwd)/uploads:/app/uploads" proelectro/dropsend:latest
 ```
 
 ## Tech
