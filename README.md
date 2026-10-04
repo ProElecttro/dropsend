@@ -94,3 +94,4 @@ with the BeagleBone acting as the remote control layer.
 
 At that point, DropSend isn't really just a photo-transfer app anymore. It's a small self-hosted photo storage system you can access from anywhere.
 
+Cenfra deployment test
