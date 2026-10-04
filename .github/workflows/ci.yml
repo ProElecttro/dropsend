@@ -7,7 +7,7 @@ on:
 
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: [self-hosted, dropsend-mac]
 
     steps:
       - name: Repository Checkout
